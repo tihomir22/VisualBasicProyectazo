@@ -12,13 +12,10 @@
         Dim ruta As String = ""
 
         Dim vehiculo1 = New Vehiculo("1018HJK", "Pepe", "Banano", Now.ToString())
-        Dim vehiculo2 = New Vehiculo("8308XZR", "Josh", "Pepito", Now.ToString())
-        Dim vehiculo3 = New Vehiculo("1234XRG", "Tihomir", "Stoychev", Now.ToString())
-        Dim vehiculo4 = New Vehiculo("9831XZR", "Andreu", "Figuer", Now.ToString())
-        Dim vehiculo5 = New Vehiculo("9018HJK", "Deus", "Vult", Now.ToString())
 
 
-        Dim todosLosVehiculos = {vehiculo1, vehiculo2, vehiculo3, vehiculo4, vehiculo5}.ToList
+        Dim todosLosVehiculos = {vehiculo1}.ToList
+        todosLosVehiculos.Clear()
         Dim parking = {vehiculo1}.ToList
         parking.Clear()
 
@@ -27,20 +24,25 @@
             opcion = Console.ReadLine()
             Select Case opcion
                 Case 1
-                    Console.WriteLine("Elige un vehiculo a aparcar")
-                    mostrarVehiculos(todosLosVehiculos.ToArray)
-                    eleccion = Console.ReadLine()
-                    If (eleccion < todosLosVehiculos.ToArray.Length) Then
-                        If (actualPosicion < 4) Then
-                            parking.Add(todosLosVehiculos(eleccion))
-                            Console.WriteLine("Añadido exitosamente el vehiculo " & todosLosVehiculos(eleccion).toString)
-                            actualPosicion = actualPosicion + 1
-                            Console.WriteLine("El parking ahora tiene " & actualPosicion & "de 4")
+
+                    If (todosLosVehiculos.Capacity <> 0) Then
+                        Console.WriteLine("Elige un vehiculo a aparcar")
+                        mostrarVehiculos(todosLosVehiculos.ToArray)
+                        eleccion = Console.ReadLine()
+                        If (eleccion < todosLosVehiculos.ToArray.Length) Then
+                            If (actualPosicion < 4) Then
+                                parking.Add(todosLosVehiculos(eleccion))
+                                Console.WriteLine("Añadido exitosamente el veh iculo " & todosLosVehiculos(eleccion).toString)
+                                actualPosicion = actualPosicion + 1
+                                Console.WriteLine("El parking ahora tiene " & actualPosicion & "de 4")
+                            Else
+                                Console.WriteLine("El parking esta lleno no se pueden añadir más")
+                            End If
                         Else
-                            Console.WriteLine("El parking esta lleno no se pueden añadir más")
+                            Console.WriteLine("Has introducido un numero incorrecto")
                         End If
                     Else
-                        Console.WriteLine("Has introducido un numero incorrecto")
+                        Console.WriteLine("Debes cargar los vehiculos de los ficheros antes!! Opcion 4")
                     End If
                 Case 2
                     Console.WriteLine("Elige un vehiculo a sacar del parking")
@@ -75,7 +77,7 @@
                             ruta = "ficheroDestino.txt"
                         End If
 
-                        cargarDatosFichero(ruta)
+                        cargarDatosFichero(ruta, todosLosVehiculos)
                         Console.WriteLine("Leido con exito")
                     Catch ex As Exception
                         Console.WriteLine(ex.ToString)
@@ -100,21 +102,18 @@
         Dim nombreProp As String
         Dim apellidosProp As String
         Dim fecha As String
-        Private v1 As String
-        Private v2 As String
-        Private v3 As String
-        Private v4 As String
+
 
         Public Sub New(v1 As String, v2 As String, v3 As String, v4 As String)
             Me.New()
-            Me.v1 = v1
-            Me.v2 = v2
-            Me.v3 = v3
-            Me.v4 = v4
+            Me.matricula = v1
+            Me.nombreProp = v2
+            Me.apellidosProp = v3
+            Me.fecha = v4
         End Sub
 
         Function toString()
-            Return (v1 + " " + v2 + " " + v3 + " " + v4)
+            Return (matricula + " " + nombreProp + " " + apellidosProp + " " + fecha)
         End Function
 
 
@@ -158,7 +157,9 @@
 
     End Function
 
-    Function cargarDatosFichero(ByVal ruta As String)
+    Function cargarDatosFichero(ByVal ruta As String, ByRef todosLosVehiculos As List(Of Vehiculo))
+
+
 
         Dim TextoLeido As String = ""
         Dim Fichero As Integer = FreeFile()
@@ -174,9 +175,18 @@
         ReDim Preserve arrayLeido(arrayLeido.Length - 2)
         Console.WriteLine("El array tiene " & arrayLeido.Length)
 
+        Dim datosVehiculo() As String
         For Index As Int32 = 0 To arrayLeido.Length - 1
             Console.WriteLine(arrayLeido(Index).ToString)
+            datosVehiculo = arrayLeido(Index).Split
+            Console.WriteLine("Campos en el nuevo array " & datosVehiculo.Length)
+            Dim v = New Vehiculo(datosVehiculo(0), datosVehiculo(1), datosVehiculo(2), datosVehiculo(3) & datosVehiculo(4))
+            Console.WriteLine("Dado de alta con exito " & v.toString)
+            todosLosVehiculos.Add(v)
         Next
+
+
+
 
         Return TextoLeido
 

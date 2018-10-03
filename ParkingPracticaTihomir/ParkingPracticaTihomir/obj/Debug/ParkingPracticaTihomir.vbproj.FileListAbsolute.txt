@@ -9,3 +9,14 @@ C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Deb
 C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.exe
 C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.xml
 C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.pdb
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.exe.config
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.exe
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.pdb
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.xml
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbprojAssemblyReference.cache
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.Resources.resources
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbproj.GenerateResource.cache
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbproj.CoreCompileInputs.cache
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.exe
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.xml
+C:\Users\sportak\GitProjects\VisualBasicProyectazo\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.pdb
