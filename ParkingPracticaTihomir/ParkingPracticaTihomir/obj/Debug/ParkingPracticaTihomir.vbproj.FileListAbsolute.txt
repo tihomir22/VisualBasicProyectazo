@@ -1,0 +1,11 @@
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.exe.config
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.exe
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.pdb
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\bin\Debug\ParkingPracticaTihomir.xml
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbprojAssemblyReference.cache
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.Resources.resources
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbproj.GenerateResource.cache
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.vbproj.CoreCompileInputs.cache
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.exe
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.xml
+C:\Users\mati\source\repos\ParkingPracticaTihomir\ParkingPracticaTihomir\obj\Debug\ParkingPracticaTihomir.pdb
